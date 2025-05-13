@@ -1,0 +1,431 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #27445d;
+    
+    
+  }
+
+  .heroe{
+    background-color: #27445d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  
+  }
+
+  /*
+  .containerrr{
+    background-color: #27445d;
+    height: 400px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 420px 1fr;  
+    grid-template-rows: 1fr 100px 1fr;
+  }*/
+ 
+   /*
+  .uno{
+    grid-column-start: 1;     
+    grid-row-start: span 3;
+    margin-right: 20px;
+    align-items: baseline;
+    
+  }
+  .hi{
+    display: flex;
+    align-items: end;
+    grid-row-start: 1;
+    grid-column: 2;
+    color: #d0ac0d;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-left: 10px;
+    
+  
+  }
+  .name{
+    display: flex;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 0;
+    align-items: center;
+  }
+  .description{
+    align-items: baseline;
+    display: flex;
+    font-size: 30px;
+    color: #f4f5f6;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    margin-left: 10px;
+  
+  
+  }
+
+    
+    */
+ 
+
+
+
+/*
+  
+
+p{
+  margin: 0;
+}
+
+
+
+
+.flag {
+ 
+  height: 10px;
+  grid-row-start: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  height: 15px;
+  padding-top: 15px;
+}
+#f{
+  padding-right: 15px;
+}
+*/
+.s{
+  background-color: #f8f9fa;
+  margin-top: 5px;
+  width: 100vw;
+
+}
+
+.s h1 h2 h3{
+  color:#EFE9D5;
+}
+
+.containerr{
+  display: grid;
+  background-color: #f8f9fa;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 200px;
+  width: 1180px;
+  margin: 100px;
+}
+
+.social{
+  display: flex;
+  grid-row-start: 2;
+  align-items: center;
+  justify-content: end;
+  color: #27445d;
+  font-size: 25px;
+  
+  padding: 25px;
+}
+.socials{
+  
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: repeat(3, 1fr); 
+  grid-row-start: 2;
+  
+
+ 
+}
+.instagram{
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: end;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#insta-logo{
+  display: flex;
+ grid-column-start: 2;
+ grid-row-start: 1;
+ align-items: end;
+}
+
+.social-icon img{
+  height: 20px;
+
+}
+.facebook{
+  display: flex;
+  align-items: center;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+#facebook-logo{
+  display: flex;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  align-items: center;
+}
+
+#spotify-logo{
+  display: flex;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  align-items: start;
+
+}
+
+
+
+a{
+  text-decoration: none;
+  color: #27445D;
+}
+
+
+
+
+.containerrr{
+  display: grid;
+
+  grid-template:
+ 
+  "foto"
+  "hi"
+  "name"
+  "description";
+
+
+  .uno{
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+    
+    
+
+  }
+  #prof-pic{
+ 
+  
+    border-radius: 50%;
+    height: 300px;
+
+  }
+
+  
+
+  .hi{
+
+    grid-area: hi;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: #d0ac0d;
+    font-size: 30px;
+    font-weight: 700;
+    
+   
+    padding: 0;
+    margin-bottom: 0;
+
+
+  }
+
+  .p{
+    margin-bottom: 0;
+  }
+ 
+
+  .name{
+    grid-area: name;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 600;
+    
+    
+
+  }
+
+  .description{
+    grid-area: description;
+    display: flex;
+    justify-content: center;
+    color: #f4f5f6;
+
+
+  }
+  .description p{
+    margin-right: 1em;
+  }
+
+   @media (min-width:768px){
+    
+    grid-template:
+    
+    
+    "foto hi"
+    "foto name"
+    "foto description";
+    .uno{
+      grid-area: foto;
+      display: flex;
+      justify-content: center;
+      
+      
+  
+    }
+  
+    
+  
+    .hi{
+  
+      grid-area: hi;
+      display: flex;
+      align-items: end;
+      justify-content: left;
+      color: #d0ac0d;
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: 25px;
+      margin-top: .5em;
+     
+      padding: 0;
+      margin-bottom: 0;
+  
+  
+    }
+  
+    .p{
+      margin-bottom: 0;
+    }
+   
+  
+    .name{
+      grid-area: name;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 45px;
+      font-weight: 600;
+      margin-top: 0;
+      margin-left: .5em;
+      margin-top: -2.5em;
+      margin-bottom: -2em;
+      
+  
+    }
+  
+    .description{
+      grid-area: description;
+      display: flex;
+      justify-content: flex-start;
+      align-items:start ;
+      margin-left: 25px;
+      color: #f4f5f6;
+
+  
+  
+    }
+    .description p{
+      margin-right: 1em;
+    }
+
+    
+  }
+
+  @media (min-width: 992px){
+    grid-template:
+    
+    
+    "foto hi"
+    "foto name"
+    "foto description";
+
+    #prof-pic{
+ 
+  
+      border-radius: 50%;
+      height: 400px;
+  
+    }
+    .uno{
+
+      grid-area: foto;
+      display: flex;
+      justify-content: center;
+     
+      
+      
+  
+    }
+    .hi{
+  
+      grid-area: hi;
+      display: flex;
+      align-items: end;
+      justify-content: left;
+      color: #d0ac0d;
+      font-size: 40px;
+      font-weight: 700;
+      margin-left: 30px;
+      margin-top: .5em;
+     
+      padding: 0;
+      margin-bottom: 0;
+      
+  
+  
+    }
+  
+    .p{
+      margin-bottom: 0;
+    }
+   
+  
+    .name{
+      grid-area: name;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 80px;
+      font-weight: 600;
+      margin-top: 0;
+      margin-left: 25px;
+      margin-top: -3em;
+      margin-bottom: -2.5em;
+      
+  
+    }
+  
+    .description{
+      grid-area: description;
+      display: flex;
+      justify-content: flex-start;
+      align-items:start ;
+      margin-left: 30px;
+      color: #f4f5f6;
+      font-size: 30px;
+
+  
+  
+    }
+    .description p{
+      margin-right: .56em;
+    }
+    .description img{
+      margin-top: .6em;
+    }
+      
+    
+  }
+
+}
